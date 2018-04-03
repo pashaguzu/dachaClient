@@ -1,0 +1,24 @@
+{
+  "name": "dashaassistantfront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config-overrides.js",
+  "dependencies": {
+    "antd": "^3.4.0",
+    "babel-plugin-import": "^1.6.7",
+    "create-react-app": "^1.5.2",
+    "react": "^16.3.0",
+    "react-app-rewired": "^1.5.0",
+    "react-dom": "^16.3.0",
+    "react-http-request": "^1.0.4",
+    "react-scripts": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

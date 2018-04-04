@@ -13,3 +13,13 @@ export const asyncServices = (store) => {
 })
     );
 }
+
+export const asyncGallery = (store) => {
+    return (
+        Loadable({
+            loader: () => import('../routes/Gallery'),
+            modules: ['../routes/Gallery'],
+        webpack: () => [require.resolveWeak('../routes/Gallery')],
+})
+    );
+}

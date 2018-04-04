@@ -8,7 +8,7 @@ import Service from './components/Service';
 
 
 
-class Services extends React.PureComponent {
+class Services extends React.Component {
 
     render() {
         return (

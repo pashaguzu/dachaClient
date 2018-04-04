@@ -26,7 +26,7 @@ class Services extends React.PureComponent {
                         return <List
                                     split={false}
                                     loading={loading}
-                                    grid={{gutter: 10, xs: 3,   md: 1, lg: 4/*, xl: 4*/}}
+                                    grid={{gutter: 10, xs: 3,   md: 1, lg: 3/*, xl: 4*/}}
                                     dataSource={result.body}
                                     renderItem={person => (
                                         <List.Item key={person.id}>

@@ -10,9 +10,8 @@ class Service extends React.PureComponent {
         const {title,describe,photo} = this.props.info;
         return (
                         <Card title={title} bordered={true}>
-                            <img style={{width:250,height:100}} src={photo}/>
-                            <p>{describe}</p>
-                            <Button type="primary">wevwev</Button>
+                            <img style={{width:324,height:300}} src={photo}/>
+                            <h4>{describe}</h4>
                         </Card>
 
         );

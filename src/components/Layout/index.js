@@ -15,7 +15,7 @@ class AppLayout extends React.Component {
                 <Header style={{  width: '100%' }}>
                         <LayoutHeader />
                 </Header>
-                <Content style={{ padding: '70px 50px', flex: '1' }}>
+                <Content style={{ padding: '20px 50px', flex: '1' }}>
                    <UserRoutes />
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>

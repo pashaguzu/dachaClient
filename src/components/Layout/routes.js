@@ -3,7 +3,8 @@ import {Route, Link} from 'react-router-dom'
 import {
     asyncServices,
     asyncGallery,
-    asyncStartPage
+    asyncStartPage,
+    asyncTeam
 } from '../../routes';
 
 export const UserRoutes = ({store}) => {
@@ -12,6 +13,7 @@ export const UserRoutes = ({store}) => {
             <Route exact path="/" component={asyncStartPage(store)}/>
             <Route path="/works" component={asyncServices(store)}/>
             <Route path="/gallery" component={asyncGallery(store)}/>
+            <Route path="/team" component={asyncTeam(store)}/>
         </React.Fragment>
     )
 }

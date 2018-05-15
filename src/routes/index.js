@@ -32,3 +32,12 @@ export const asyncStartPage = (store) => {
 })
     );
 }
+export const asyncTeam = (store) => {
+    return (
+        Loadable({
+            loader: () => import('../routes/Team'),
+            modules: ['../routes/Team'],
+        webpack: () => [require.resolveWeak('../routes/Team')],
+})
+    );
+}

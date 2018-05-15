@@ -1,6 +1,7 @@
 import React from 'react';
-import {Divider , Menu, Icon } from 'antd';
+import {Divider , Row,Col,Menu, Icon } from 'antd';
 import {Link} from 'react-router-dom'
+import Feedback from '../Feedback'
 class LayoutHeader extends React.Component {
     state = {
         current: '',
@@ -13,19 +14,16 @@ class LayoutHeader extends React.Component {
     }
     render() {
         return (
-
-
-
+            <Row type="flex" justify="space-between"  align="middle">
+                <Col span={3}><Link to={'/'}><img alt="" className="logo" style={{height:'50px', marginRight:'5px'}} src="http://www.rusotka.ucoz.com/poselki/nrd/nrd50logo.png" /></Link></Col>
+                <Col offset={2} span={15}>
                     <Menu
                             theme="dark"
+                            style={{'borderBottom':'none'}}
                             onClick={this.handleClick}
                             selectedKeys={[this.state.current]}
                             mode="horizontal"
-                            style={{ lineHeight: '64px' }}
                         >
-                            <Menu.Item key="dacha">
-                                <Link to="/"> <Icon type="home" />Дачный помощник</Link>
-                            </Menu.Item>
                             <Menu.Item key="home">
                                 <Link to="/"> <Icon type="home" />Главная</Link>
                             </Menu.Item>
@@ -39,7 +37,13 @@ class LayoutHeader extends React.Component {
                                 <Link to="/team"> <Icon type="team" />Команда</Link>
                             </Menu.Item>
                         </Menu>
+                </Col>
 
+                <Col span={4}>
+                    <Feedback />
+                </Col>
+
+            </Row>
         );
     }
 }

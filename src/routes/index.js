@@ -23,3 +23,12 @@ export const asyncGallery = (store) => {
 })
     );
 }
+export const asyncStartPage = (store) => {
+    return (
+        Loadable({
+            loader: () => import('../routes/StartPage'),
+            modules: ['../routes/StartPage'],
+        webpack: () => [require.resolveWeak('../routes/StartPage')],
+})
+    );
+}
